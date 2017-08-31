@@ -780,6 +780,7 @@ export class Bond {
 	 * of `Bond` may be available.
 	 */
 	static instanceOf(b) {
+		if (b === null) {return 'undefined'};
 		return typeof(b) === 'object' && b !== null && typeof(b.reset) === 'function' && typeof(b.changed) === 'function';
 	}
 }
