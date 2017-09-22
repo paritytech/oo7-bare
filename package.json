@@ -8,7 +8,7 @@
     "lib/*"
   ],
   "scripts": {
-    "test": "npm run compile && mocha --compilers js:babel-core/register  --reporter spec",
+    "test": "mocha --compilers js:babel-core/register  --reporter spec",
     "compile": "babel -d build/ lib/"
   },
   "repository": {
